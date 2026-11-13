@@ -1,0 +1,14 @@
+{
+  "id": "ribbon-title",
+  "name": "شريط متحرك",
+  "category": "عناوين",
+  "title": "خطوة صغيرة. نتيجة واضحة.",
+  "items": [
+    "فكرة",
+    "تنفيذ",
+    "مراجعة"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

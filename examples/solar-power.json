@@ -1,0 +1,64 @@
+{
+  "title": "كيف يصير الضوء كهرباء؟",
+  "width": 540,
+  "height": 960,
+  "fps": 30,
+  "narrationStatus": "silent-preview; record the supplied Arabic script to produce a narrated version",
+  "sources": [
+    "https://www.energy.gov/cmei/systems/solar-photovoltaic-cell-basics"
+  ],
+  "scenes": [
+    {
+      "type": "solar",
+      "title": "من الضوء إلى الشحنة",
+      "items": [
+        "ضوء",
+        "خلية",
+        "تيار"
+      ],
+      "caption": "تمتص مادة شبه موصلة طاقة من ضوء الشمس.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "layers",
+      "title": "الطاقة تحرّك الشحنات",
+      "items": [
+        "ضوء",
+        "مادة شبه موصلة",
+        "شحنات"
+      ],
+      "caption": "تساعد هذه الطاقة على توليد شحنات قابلة للحركة داخل الخلية.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    },
+    {
+      "type": "flow",
+      "title": "دائرة مكتملة",
+      "items": [
+        "فصل الشحنات",
+        "دائرة خارجية",
+        "تيار كهربائي"
+      ],
+      "caption": "تفصل بنية الخلية الشحنات. وفي دائرة مغلقة يتدفق تيار كهربائي.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "solar",
+      "title": "طاقة يمكن استخدامها",
+      "items": [
+        "خلية",
+        "دائرة",
+        "حمل كهربائي"
+      ],
+      "caption": "هكذا تتحول بعض طاقة الضوء إلى كهرباء، وليس كل الضوء الممتص.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    }
+  ]
+}

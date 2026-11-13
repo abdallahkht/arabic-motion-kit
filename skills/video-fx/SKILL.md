@@ -1,0 +1,16 @@
+---
+name: video-fx
+description: "Add Arabic motion effects to a person's own video: cards behind the subject, orbiting labels, spotlight, keyword echoes, correction text, comments, checklists, split charts or B-roll and full-frame reading covers. Use when an effect must interact with recorded footage."
+---
+
+# Video effects
+
+Resolve the kit location from this skill's real path (two directories above) or `app-location.txt`. Read `skills/animate/SKILL.md` and `catalog/effects.json`. Retain the user's editing style, original color and voice.
+
+1. Inspect the source video, fps, color metadata, framing and requested word/time. Identify the exact interval and whether the subject is looking at the camera. Transcribe locally if needed and use `scripts/sync.py`; don't guess the word time. Preserve full words and source audio.
+2. Choose the effect. `glass-cards`, `orbit`, `spotlight`, `browser-stack`, `backdrop`, `echo`, `correction` need a real alpha cutout. `tier-board`, `chart-panel`, `checklist`, `pinned-comment`, `pings`, `focus-ring`, `broll-panel`, `reading-cover`, `keyword-tag` do not. Do not simulate a subject mask using a rectangle or an oval.
+3. For behind-subject effects, create a short source segment first, then run `npm run motion -- cutout segment.mp4 --out subject.mov`. The first use downloads HyperFrames' local segmentation model. Check hair, glasses, hands and motion edges. Keep the same canvas, trim and timing for the source and the cutout. A cutout from a different offset is wrong. If edges fail, choose a non-cutout layout or repair the mask; don't hide the defect with a skin grade.
+4. Build with `npm run motion -- video-fx echo --input segment.mp4 --cutout subject.mov --title 'الفكرة' --out work/effect`. For the whole source use `--start` and `--duration`; those offsets are applied to both the source and cutout. For `broll-panel`, provide `--media` with a local screenshot or screen recording. Save text and actual numbers in a config JSON and pass `--config`. `reading-cover` uses a full-frame graphic so the downward-looking face is actually hidden. A split panel cannot fix a visible reading moment below it.
+5. Inspect every entrance, exit and overlap on the face. Adjust the generated layout for this person; the defaults are not guaranteed safe for every crop. This version uses fixed composition positions, not automatic head tracking. For a moving subject, author position keyframes from inspected source frames or choose a split/full-frame layout. Do not claim a static card follows the head. The cutout only controls occlusion.
+6. Run the check, inspect snapshots, open the preview and render. Probe the output and verify the actual effect interval plus first/last frames. Deliver the effect segment and editable files. If this belongs inside a longer edit, integrate it at the exact source interval with the existing editing pipeline and preserve the rest of the video/audio. The command itself outputs the requested segment, not a complete untouched remainder.
+7. For public gallery previews, create video-only files (`ffmpeg -i input.mp4 -map 0:v:0 -an -c:v copy preview.mp4`); a muted player is not permanent silence. Keep the voiced original separate for the user's actual edit.

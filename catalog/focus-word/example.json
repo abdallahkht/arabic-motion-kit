@@ -1,0 +1,14 @@
+{
+  "id": "focus-word",
+  "name": "كلمة تصل في وقتها",
+  "category": "عناوين",
+  "title": "الفكرة تبدأ بكلمة",
+  "items": [
+    "فكّر",
+    "جرّب",
+    "اصنع"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

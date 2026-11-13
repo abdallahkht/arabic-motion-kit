@@ -1,0 +1,14 @@
+{
+  "id": "code-focus",
+  "name": "تركيز على الكود",
+  "category": "برمجة ووكلاء",
+  "title": "السطر الذي صنع الفرق",
+  "items": [
+    "input",
+    "process",
+    "output"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

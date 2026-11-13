@@ -1,0 +1,13 @@
+{
+  "id": "split-title",
+  "name": "عنوان على مرحلتين",
+  "category": "عناوين",
+  "title": "من فكرة إلى فيديو",
+  "items": [
+    "من فكرة",
+    "إلى فيديو"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

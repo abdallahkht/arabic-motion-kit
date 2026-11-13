@@ -1,0 +1,63 @@
+{
+  "title": "كيف يتعرف الهاتف على الوجه؟",
+  "width": 540,
+  "height": 960,
+  "fps": 30,
+  "narrationStatus": "silent-preview; record the supplied Arabic script to produce a narrated version",
+  "sources": [
+    "https://support.apple.com/en-us/102381"
+  ],
+  "scenes": [
+    {
+      "type": "scan",
+      "title": "أكثر من صورة",
+      "items": [
+        "نقاط",
+        "عمق",
+        "وجه"
+      ],
+      "caption": "في أنظمة مثل Face ID، تُستخدم نقاط غير مرئية لقياس عمق الوجه.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "layers",
+      "title": "خريطة وصورة",
+      "items": [
+        "خريطة عمق",
+        "صورة تحت الحمراء",
+        "تمثيل رياضي"
+      ],
+      "caption": "تتحول بيانات العمق والصورة تحت الحمراء إلى تمثيل رياضي.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    },
+    {
+      "type": "comparison",
+      "title": "مقارنة على الجهاز",
+      "items": [
+        "الوجه المسجل",
+        "القراءة الجديدة"
+      ],
+      "caption": "يقارن الجهاز هذا التمثيل بالبيانات المسجلة.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "hero",
+      "title": "نتيجة المطابقة",
+      "items": [
+        "قياس",
+        "مقارنة",
+        "تحقق"
+      ],
+      "caption": "عند نجاح التحقق، يسمح الجهاز بالدخول. الرسم هنا توضيحي.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    }
+  ]
+}

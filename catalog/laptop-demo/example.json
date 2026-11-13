@@ -1,0 +1,14 @@
+{
+  "id": "laptop-demo",
+  "name": "عرض حاسوب",
+  "category": "واجهات ومنتجات",
+  "title": "مساحة للعمل الواضح",
+  "items": [
+    "ملفات",
+    "مشاهد",
+    "تصدير"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

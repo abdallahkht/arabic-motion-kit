@@ -1,0 +1,64 @@
+{
+  "title": "كيف تنتقل البيانات بالضوء؟",
+  "width": 540,
+  "height": 960,
+  "fps": 30,
+  "narrationStatus": "silent-preview; record the supplied Arabic script to produce a narrated version",
+  "sources": [
+    "https://www.corning.com/optical-communications/worldwide/en/home/products/fiber/optical-fiber-basics.html"
+  ],
+  "scenes": [
+    {
+      "type": "fiber",
+      "title": "البيانات تصبح ضوءاً",
+      "items": [
+        "إشارة",
+        "نبضات",
+        "بيانات"
+      ],
+      "caption": "يحوّل المرسل البيانات إلى إشارة ضوئية.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "layers",
+      "title": "قلب وغلاف",
+      "items": [
+        "قلب زجاجي",
+        "غلاف",
+        "حماية"
+      ],
+      "caption": "يساعد اختلاف معامل الانكسار بين القلب والغلاف على توجيه الضوء.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    },
+    {
+      "type": "fiber",
+      "title": "الضوء داخل الليف",
+      "items": [
+        "مرسل",
+        "ليف",
+        "مستقبل"
+      ],
+      "caption": "الرسم المتعرج تبسيط تعليمي. طريقة الانتشار تعتمد على نوع الليف.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "flow",
+      "title": "المستقبل يقرأ الإشارة",
+      "items": [
+        "ضوء",
+        "كاشف",
+        "بيانات"
+      ],
+      "caption": "في النهاية يحوّل المستقبل الإشارة الضوئية إلى إشارة كهربائية.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    }
+  ]
+}

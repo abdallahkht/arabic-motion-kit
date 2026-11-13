@@ -1,0 +1,12 @@
+node_modules/
+.venv/
+work/
+renders/
+review/
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.pyc
+.hyperframes/

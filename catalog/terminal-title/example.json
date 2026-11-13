@@ -1,0 +1,14 @@
+{
+  "id": "terminal-title",
+  "name": "عنوان طرفية",
+  "category": "عناوين",
+  "title": "جاهز للتنفيذ",
+  "items": [
+    "> ابدأ بالفكرة",
+    "> ابنِ المشهد",
+    "✓ تم"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "phone-demo",
+  "name": "عرض هاتف",
+  "category": "واجهات ومنتجات",
+  "title": "الفكرة بين يديك",
+  "items": [
+    "مشروعي",
+    "معاينة",
+    "جاهز"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

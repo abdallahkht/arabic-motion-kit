@@ -1,0 +1,14 @@
+{
+  "id": "agent-cycle",
+  "name": "دورة تحسين",
+  "category": "برمجة ووكلاء",
+  "title": "جرّب. راجع. حسّن.",
+  "items": [
+    "خطّط",
+    "نفّذ",
+    "راجع"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

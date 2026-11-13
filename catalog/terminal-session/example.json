@@ -1,0 +1,14 @@
+{
+  "id": "terminal-session",
+  "name": "جلسة تنفيذ",
+  "category": "برمجة ووكلاء",
+  "title": "من طلب إلى نتيجة",
+  "items": [
+    "اقرأ المطلوب",
+    "ابنِ نسخة",
+    "اختبر النتيجة"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

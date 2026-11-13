@@ -1,0 +1,70 @@
+{
+  "title": "كيف يختار النموذج التكملة؟",
+  "width": 540,
+  "height": 960,
+  "fps": 30,
+  "narrationStatus": "silent-preview; record the supplied Arabic script to produce a narrated version",
+  "sources": [
+    "https://research.google/pubs/attention-is-all-you-need/"
+  ],
+  "scenes": [
+    {
+      "type": "tokens",
+      "title": "النص يصبح وحدات",
+      "items": [
+        "نكتب",
+        "جملة",
+        "قصيرة"
+      ],
+      "caption": "النموذج يقسّم النص إلى وحدات أصغر. الوحدة ليست دائماً كلمة كاملة.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "network",
+      "title": "السياق يغيّر التوقع",
+      "items": [
+        "السياق",
+        "الترتيب",
+        "المعنى",
+        "النمط",
+        "التوقع"
+      ],
+      "caption": "يستخدم السياق ليحسب احتمالات الوحدات التالية.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    },
+    {
+      "type": "probability",
+      "title": "أكثر من تكملة ممكنة",
+      "items": [
+        "تكملة أ",
+        "تكملة ب",
+        "تكملة ج"
+      ],
+      "caption": "هذه أرقام توضيحية. الاختيار لا يعني دائماً أخذ أعلى احتمال.",
+      "values": [
+        55,
+        30,
+        15
+      ],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "flow",
+      "title": "تتكرر العملية",
+      "items": [
+        "وحدة جديدة",
+        "سياق أطول",
+        "توقع جديد"
+      ],
+      "caption": "ثم يضيف الوحدة للنص، ويعيد العملية لبناء الإجابة.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+faster-whisper==1.2.1
+huggingface-hub>=0.21,<1
+
+av==15.1.0

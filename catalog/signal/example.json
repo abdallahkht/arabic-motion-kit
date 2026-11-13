@@ -1,0 +1,14 @@
+{
+  "id": "signal",
+  "name": "موجة إشارة",
+  "category": "عناوين",
+  "title": "من الصوت إلى الصورة",
+  "items": [
+    "صوت",
+    "إشارة",
+    "صورة"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

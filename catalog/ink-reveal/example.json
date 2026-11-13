@@ -1,0 +1,14 @@
+{
+  "id": "ink-reveal",
+  "name": "ظهور بالحبر",
+  "category": "عناوين",
+  "title": "كل فكرة لها شكل",
+  "items": [
+    "اكتبها",
+    "ارسمها",
+    "حرّكها"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

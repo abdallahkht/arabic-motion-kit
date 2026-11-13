@@ -1,0 +1,114 @@
+[
+  {
+    "id": "glass-cards",
+    "name": "بطاقات حولك",
+    "kind": "cards",
+    "cutout": true,
+    "duration": 4
+  },
+  {
+    "id": "orbit",
+    "name": "مدارات خلفك",
+    "kind": "orbit",
+    "cutout": true,
+    "duration": 4
+  },
+  {
+    "id": "tier-board",
+    "name": "لوحة ترتيب فوقك",
+    "kind": "tiers",
+    "cutout": false,
+    "duration": 4
+  },
+  {
+    "id": "chart-panel",
+    "name": "رسم فوقك",
+    "kind": "chart",
+    "cutout": false,
+    "duration": 4
+  },
+  {
+    "id": "checklist",
+    "name": "قائمة مهام",
+    "kind": "list",
+    "cutout": false,
+    "duration": 4
+  },
+  {
+    "id": "spotlight",
+    "name": "إضاءة الموضوع",
+    "kind": "spotlight",
+    "cutout": true,
+    "duration": 4
+  },
+  {
+    "id": "browser-stack",
+    "name": "نوافذ خلفك",
+    "kind": "windows",
+    "cutout": true,
+    "duration": 4
+  },
+  {
+    "id": "backdrop",
+    "name": "خلفية متحركة",
+    "kind": "backdrop",
+    "cutout": true,
+    "duration": 4
+  },
+  {
+    "id": "echo",
+    "name": "كلمة خلفك",
+    "kind": "echo",
+    "cutout": true,
+    "duration": 4
+  },
+  {
+    "id": "correction",
+    "name": "تصحيح كلمة",
+    "kind": "correction",
+    "cutout": true,
+    "duration": 4
+  },
+  {
+    "id": "pinned-comment",
+    "name": "تعليق مثبت",
+    "kind": "comment",
+    "cutout": false,
+    "duration": 4
+  },
+  {
+    "id": "pings",
+    "name": "إشعارات جانبية",
+    "kind": "pings",
+    "cutout": false,
+    "duration": 4
+  },
+  {
+    "id": "focus-ring",
+    "name": "تحديد الموضوع",
+    "kind": "ring",
+    "cutout": false,
+    "duration": 4
+  },
+  {
+    "id": "broll-panel",
+    "name": "لقطة مساندة فوقك",
+    "kind": "media",
+    "cutout": false,
+    "duration": 4
+  },
+  {
+    "id": "reading-cover",
+    "name": "تغطية قراءة النص",
+    "kind": "cover",
+    "cutout": false,
+    "duration": 4
+  },
+  {
+    "id": "keyword-tag",
+    "name": "عنوان سفلي",
+    "kind": "tag",
+    "cutout": false,
+    "duration": 4
+  }
+]

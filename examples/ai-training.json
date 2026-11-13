@@ -1,0 +1,69 @@
+{
+  "title": "كيف يتعلم النموذج؟",
+  "width": 540,
+  "height": 960,
+  "fps": 30,
+  "narrationStatus": "silent-preview; record the supplied Arabic script to produce a narrated version",
+  "sources": [
+    "https://developers.google.com/machine-learning/crash-course/linear-regression/gradient-descent"
+  ],
+  "scenes": [
+    {
+      "type": "flow",
+      "title": "تعلّم من الأمثلة",
+      "items": [
+        "بيانات",
+        "توقع",
+        "مقارنة"
+      ],
+      "caption": "أثناء التدريب، يبدأ النموذج بتوقع نتيجة من بيانات المثال.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "comparison",
+      "title": "قارن التوقع بالهدف",
+      "items": [
+        "التوقع",
+        "الهدف"
+      ],
+      "caption": "دالة الخسارة تقيس الفرق بين النتيجة المتوقعة والهدف.",
+      "values": [],
+      "duration": 5,
+      "theme": "midnight"
+    },
+    {
+      "type": "network",
+      "title": "عدّل الأوزان",
+      "items": [
+        "الخسارة",
+        "التدرج",
+        "الأوزان",
+        "التحديث",
+        "جولة جديدة"
+      ],
+      "caption": "تُستخدم التدرجات لتحديث الأوزان باتجاه تقليل الخسارة.",
+      "values": [],
+      "duration": 5,
+      "theme": "studio"
+    },
+    {
+      "type": "bars",
+      "title": "اختبر على بيانات جديدة",
+      "items": [
+        "تدريب",
+        "تحقق",
+        "اختبار"
+      ],
+      "caption": "تحسن التدريب وحده لا يكفي. نختبر على بيانات لم يتدرب عليها.",
+      "values": [
+        80,
+        70,
+        68
+      ],
+      "duration": 5,
+      "theme": "midnight"
+    }
+  ]
+}

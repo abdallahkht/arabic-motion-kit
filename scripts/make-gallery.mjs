@@ -1,0 +1,5 @@
+import fs from 'node:fs';import {animations,effects} from '../src/catalog.mjs';
+const explainers=['next-word','ai-training','face-unlock','solar-power','fiber-internet'].map(id=>({id:'explain-'+id,name:JSON.parse(fs.readFileSync(`examples/${id}.json`)).title,category:'شروحات',prompt:`استخدم explain لشرح ${JSON.parse(fs.readFileSync(`examples/${id}.json`)).title} بأسلوب عربي واضح، ثم جهّز معاينة قابلة للتعديل.`}));
+const catalog=[...explainers,...effects.map(x=>({...x,id:'fx-'+x.id,category:'مؤثرات على الفيديو',prompt:`استخدم video-fx ${x.id} على الفيديو الذي أعطيك إياه. افحص مساحة الوجه وتوقيت الكلام وحافظ على اللون الأصلي.`})),...animations.map(x=>({...x,category:'حركات',prompt:`استخدم animate ${x.id} لإنشاء حركة عربية. عدّل المحتوى حسب فكرتي ولا تخترع أرقاماً.`}))];
+fs.mkdirSync('gallery/fonts',{recursive:true});for(const name of ['IBMPlexSansArabic-Bold.ttf','IBMPlexSansArabic-Regular.ttf','OFL.txt'])fs.copyFileSync('assets/fonts/'+name,'gallery/fonts/'+name);
+fs.writeFileSync('gallery/catalog.json',JSON.stringify(catalog,null,2));

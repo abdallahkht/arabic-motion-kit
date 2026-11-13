@@ -1,0 +1,14 @@
+{
+  "id": "globe-links",
+  "name": "وصلات حول الكرة",
+  "category": "شرح وعمليات",
+  "title": "فكرة تصل بعيداً",
+  "items": [
+    "عمّان",
+    "الرياض",
+    "دبي"
+  ],
+  "values": [],
+  "duration": 4,
+  "theme": "studio"
+}

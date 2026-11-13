@@ -1,0 +1,14 @@
+{
+  "id": "metric-counter",
+  "name": "رقم كبير",
+  "category": "مقارنات وأرقام",
+  "title": "كل دقيقة لها قيمة",
+  "items": [
+    "دقيقة"
+  ],
+  "values": [
+    24
+  ],
+  "duration": 4,
+  "theme": "studio"
+}
