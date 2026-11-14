@@ -97,7 +97,7 @@ node scripts/featured.mjs iceberg renders/my-iceberg.mp4
 | [src/](src) | The renderer commands, project builder, effects, and [3D Cutaway source](src/cutaway) |
 | [examples/](examples) | Five explainer plans, a custom scene, sample footage, and the featured settings |
 | [examples/originals/blocks/](examples/originals/blocks) | Ten scenes, each with its code, settings, and README |
-| [assets/](assets) | Arabic fonts and eight sound effects |
+| [assets/](assets) | Arabic fonts and [80 WAV sound effects](assets/sounds) |
 | [gallery/media/](gallery/media) | Finished MP4s and poster images |
 | [scripts/](scripts) | Setup, transcription, timing, and publishing tools |
 | [docs/](docs) | Setup, commands, capabilities, validation, and credits |

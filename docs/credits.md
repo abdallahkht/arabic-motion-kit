@@ -3,6 +3,7 @@
 The Cutaway implementation, gallery, Arabic presets and sound generator were created for this kit. The ten bundled template scenes and their shared runtime are distributed with permission. Their source and demonstration renders are outside the kit’s MIT grant. The campaign map includes world-atlas outlines based on Natural Earth data. [Scene asset notices](../examples/originals/UPSTREAM-CREDITS.md).
 
 - The Cloudflare Security Audit reel is included as a viewing example and is excluded from the MIT grant.
+- The 72 additional sound effects are distributed under CC0. [Sources and cue inventory](../assets/sounds/README.md).
 - Original code, configs and synthesized sounds: MIT, see ../LICENSE.
 - IBM Plex Sans Arabic: IBM, SIL Open Font License 1.1; license in ../assets/fonts/OFL.txt.
 - HyperFrames 0.9.10 and GSAP 3.14.2 are package dependencies, installed from npm under their own licenses. Their licenses are not replaced by this repository's MIT license. HyperFrames' optional segmentation model is downloaded by its tool and retains its own model terms.

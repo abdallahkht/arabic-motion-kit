@@ -1,0 +1,466 @@
+{
+  "tap": {
+    "group": "Synthesized accents",
+    "duration": 0.1
+  },
+  "tick": {
+    "group": "Synthesized accents",
+    "duration": 0.07
+  },
+  "pop": {
+    "group": "Synthesized accents",
+    "duration": 0.18
+  },
+  "sweep": {
+    "group": "Synthesized accents",
+    "duration": 0.45
+  },
+  "rise": {
+    "group": "Synthesized accents",
+    "duration": 0.5
+  },
+  "confirm": {
+    "group": "Synthesized accents",
+    "duration": 0.45
+  },
+  "soft-hit": {
+    "group": "Synthesized accents",
+    "duration": 0.3
+  },
+  "spark": {
+    "group": "Synthesized accents",
+    "duration": 0.4
+  },
+  "page-turn-01": {
+    "group": "Paper",
+    "duration": 0.7546666666666667,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.1.ogg"
+  },
+  "typing-01": {
+    "group": "Keyboard",
+    "duration": 9.0,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-001.wav"
+  },
+  "key-press-01": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-001.wav"
+  },
+  "page-turn-02": {
+    "group": "Paper",
+    "duration": 1.1145625,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.2.ogg"
+  },
+  "typing-02": {
+    "group": "Keyboard",
+    "duration": 8.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-002.wav"
+  },
+  "key-press-02": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-002.wav"
+  },
+  "page-turn-03": {
+    "group": "Paper",
+    "duration": 1.0913541666666666,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.3.ogg"
+  },
+  "typing-03": {
+    "group": "Keyboard",
+    "duration": 6.0,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-003.wav"
+  },
+  "key-press-03": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-003.wav"
+  },
+  "page-turn-04": {
+    "group": "Paper",
+    "duration": 0.6501666666666667,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.4.ogg"
+  },
+  "typing-04": {
+    "group": "Keyboard",
+    "duration": 6.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-004.wav"
+  },
+  "key-press-04": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-004.wav"
+  },
+  "page-turn-05": {
+    "group": "Paper",
+    "duration": 0.87075,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.5.ogg"
+  },
+  "typing-05": {
+    "group": "Keyboard",
+    "duration": 7.5,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-005.wav"
+  },
+  "key-press-05": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-005.wav"
+  },
+  "page-turn-06": {
+    "group": "Paper",
+    "duration": 0.6966041666666667,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.6.ogg"
+  },
+  "typing-06": {
+    "group": "Keyboard",
+    "duration": 5.375,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-006.wav"
+  },
+  "key-press-06": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-006.wav"
+  },
+  "page-turn-07": {
+    "group": "Paper",
+    "duration": 0.9404166666666667,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.7.ogg"
+  },
+  "typing-07": {
+    "group": "Keyboard",
+    "duration": 6.5,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-007.wav"
+  },
+  "key-press-07": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-007.wav"
+  },
+  "page-turn-08": {
+    "group": "Paper",
+    "duration": 0.6037291666666667,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.8.ogg"
+  },
+  "typing-08": {
+    "group": "Keyboard",
+    "duration": 7.5,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-008.wav"
+  },
+  "key-press-08": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-008.wav"
+  },
+  "page-turn-09": {
+    "group": "Paper",
+    "duration": 0.9984583333333333,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.9.ogg"
+  },
+  "typing-09": {
+    "group": "Keyboard",
+    "duration": 4.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-009.wav"
+  },
+  "key-press-09": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-009.wav"
+  },
+  "page-turn-10": {
+    "group": "Paper",
+    "duration": 1.1261875,
+    "source": "https://opengameart.org/content/10-book-page-flips",
+    "original": "book_flip.10.ogg"
+  },
+  "typing-10": {
+    "group": "Keyboard",
+    "duration": 3.656270833333333,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Human Typing/human_vel-010.wav"
+  },
+  "key-press-10": {
+    "group": "Keyboard",
+    "duration": 0.25,
+    "source": "https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes",
+    "original": "Single Keys/keypress-010.wav"
+  },
+  "click-01": {
+    "group": "Interface",
+    "duration": 0.09383333333333334,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "click1.wav"
+  },
+  "click-02": {
+    "group": "Interface",
+    "duration": 0.05575,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "click2.wav"
+  },
+  "click-03": {
+    "group": "Interface",
+    "duration": 0.08614583333333334,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "click3.wav"
+  },
+  "click-04": {
+    "group": "Interface",
+    "duration": 0.03654166666666667,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "click4.wav"
+  },
+  "click-05": {
+    "group": "Interface",
+    "duration": 0.03202083333333333,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "click5.wav"
+  },
+  "mouse-down-01": {
+    "group": "Interface",
+    "duration": 0.059375,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "mouseclick1.wav"
+  },
+  "mouse-up-01": {
+    "group": "Interface",
+    "duration": 0.0690625,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "mouserelease1.wav"
+  },
+  "rollover-01": {
+    "group": "Interface",
+    "duration": 0.22729166666666667,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "rollover1.wav"
+  },
+  "rollover-02": {
+    "group": "Interface",
+    "duration": 0.05733333333333333,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "rollover2.wav"
+  },
+  "rollover-03": {
+    "group": "Interface",
+    "duration": 0.0693125,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "rollover3.wav"
+  },
+  "rollover-04": {
+    "group": "Interface",
+    "duration": 0.11320833333333333,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "rollover4.wav"
+  },
+  "rollover-05": {
+    "group": "Interface",
+    "duration": 0.11175,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "rollover5.wav"
+  },
+  "rollover-06": {
+    "group": "Interface",
+    "duration": 0.1745,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "rollover6.wav"
+  },
+  "switch-01": {
+    "group": "Interface",
+    "duration": 0.3147083333333333,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "switch1.wav"
+  },
+  "switch-04": {
+    "group": "Interface",
+    "duration": 0.41960416666666667,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "switch4.wav"
+  },
+  "switch-07": {
+    "group": "Interface",
+    "duration": 0.19233333333333333,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "switch7.wav"
+  },
+  "switch-12": {
+    "group": "Interface",
+    "duration": 0.0535625,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "switch12.wav"
+  },
+  "switch-18": {
+    "group": "Interface",
+    "duration": 0.43533333333333335,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "switch18.wav"
+  },
+  "switch-25": {
+    "group": "Interface",
+    "duration": 0.38414583333333335,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "switch25.wav"
+  },
+  "switch-35": {
+    "group": "Interface",
+    "duration": 0.3329166666666667,
+    "source": "https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "original": "switch35.wav"
+  },
+  "book-close": {
+    "group": "Objects and movement",
+    "duration": 0.23060416666666667,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/bookClose.ogg"
+  },
+  "book-open": {
+    "group": "Objects and movement",
+    "duration": 0.1510625,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/bookOpen.ogg"
+  },
+  "book-place-1": {
+    "group": "Objects and movement",
+    "duration": 0.27670833333333333,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/bookPlace1.ogg"
+  },
+  "cloth-1": {
+    "group": "Objects and movement",
+    "duration": 0.6610416666666666,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/cloth1.ogg"
+  },
+  "cloth-2": {
+    "group": "Objects and movement",
+    "duration": 0.4150625,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/cloth2.ogg"
+  },
+  "cloth-3": {
+    "group": "Objects and movement",
+    "duration": 0.4765625,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/cloth3.ogg"
+  },
+  "cloth-4": {
+    "group": "Objects and movement",
+    "duration": 0.38433333333333336,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/cloth4.ogg"
+  },
+  "creak-1": {
+    "group": "Objects and movement",
+    "duration": 0.6610416666666666,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/creak1.ogg"
+  },
+  "creak-2": {
+    "group": "Objects and movement",
+    "duration": 0.8301458333333334,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/creak2.ogg"
+  },
+  "door-close-1": {
+    "group": "Objects and movement",
+    "duration": 0.6750416666666667,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/doorClose_1.ogg"
+  },
+  "door-open-1": {
+    "group": "Objects and movement",
+    "duration": 0.9189583333333333,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/doorOpen_1.ogg"
+  },
+  "drop-leather": {
+    "group": "Objects and movement",
+    "duration": 0.41508333333333336,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/dropLeather.ogg"
+  },
+  "footstep-00": {
+    "group": "Objects and movement",
+    "duration": 0.24885416666666665,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/footstep00.ogg"
+  },
+  "footstep-03": {
+    "group": "Objects and movement",
+    "duration": 0.2690208333333333,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/footstep03.ogg"
+  },
+  "footstep-06": {
+    "group": "Objects and movement",
+    "duration": 0.242125,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/footstep06.ogg"
+  },
+  "handle-coins": {
+    "group": "Objects and movement",
+    "duration": 0.8455208333333334,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/handleCoins.ogg"
+  },
+  "handle-coins-2": {
+    "group": "Objects and movement",
+    "duration": 0.33820833333333333,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/handleCoins2.ogg"
+  },
+  "metal-click": {
+    "group": "Objects and movement",
+    "duration": 0.44583333333333336,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/metalClick.ogg"
+  },
+  "metal-latch": {
+    "group": "Objects and movement",
+    "duration": 0.2613333333333333,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/metalLatch.ogg"
+  },
+  "metal-pot-1": {
+    "group": "Objects and movement",
+    "duration": 1.4604583333333334,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/metalPot1.ogg"
+  },
+  "metal-pot-2": {
+    "group": "Objects and movement",
+    "duration": 0.9377708333333333,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/metalPot2.ogg"
+  },
+  "metal-pot-3": {
+    "group": "Objects and movement",
+    "duration": 0.907,
+    "source": "https://opengameart.org/content/50-rpg-sound-effects",
+    "original": "OGG/metalPot3.ogg"
+  }
+}

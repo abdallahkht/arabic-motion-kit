@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {drawVisual,themes,escapeHTML as esc} from './visuals.mjs';
 import {findAnimation,sceneTypes} from './catalog.mjs';
 export const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const sounds = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/sounds/catalog.json'), 'utf8'));
 export function validatePlan(plan){
  if(!plan||!Array.isArray(plan.scenes)||!plan.scenes.length)throw Error('A plan needs scenes.');
  const width=plan.width??1080,height=plan.height??1920,fps=plan.fps??30;
@@ -81,7 +82,14 @@ export function buildProject(plan,destination,baseDir=process.cwd()){
    fs.writeFileSync(path.join(out,`compositions/${id}.html`),markup);
   }
   hosts.push(`<div id="${id}" class="clip" data-composition-id="${id}" data-composition-src="compositions/${id}.html" data-start="${time}" data-duration="${duration}" data-width="${width}" data-height="${height}" data-track-index="1" data-track-kind="graphics"></div>`);
-  if(scene.sound){const sound=asset(path.join(ROOT,'assets/sounds',scene.sound+'.wav'));audio.push(`<audio id="sfx-${i}" class="clip" src="${sound}" data-start="${time+(scene.soundAt??.2)}" data-duration="${Math.min(.5,duration-.2)}" data-volume="0.2"></audio>`);}
+  if (scene.sound) {
+    const offset = scene.soundAt ?? .2;
+    if (!Object.hasOwn(sounds, scene.sound)) throw Error('Unknown sound: ' + scene.sound);
+    if (!Number.isFinite(offset) || offset < 0 || offset >= duration) throw Error('soundAt must fall within the scene.');
+    const sound = asset(path.join(ROOT, 'assets/sounds', scene.sound + '.wav'));
+    const length = Math.min(sounds[scene.sound].duration, duration - offset);
+    audio.push(`<audio id="sfx-${i}" class="clip" src="${sound}" data-start="${time + offset}" data-duration="${length}" data-volume="0.2"></audio>`);
+  }
   windows.push({scene:id,start:time,end:time+duration,type:scene.type||scene.id});time+=duration;
  });
  for(const [i,g] of (plan.captionGroups||[]).entries()){
