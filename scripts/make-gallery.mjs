@@ -6,5 +6,5 @@ const scenes=[
  ['iceberg','Iceberg','خلف كواليس الريل','Render the featured iceberg preset with my template pack. Use my visible result at the tip and four hidden steps below.'],
  ['ranking-bars','Ranking Bars','سباق المشاهدات','Render the featured ranking-bars preset with my template pack. Use my categories and values.']
 ].map(([id,name,subtitle,prompt])=>({id,name,subtitle,prompt,kind:'animation'}));
-scenes.push({id:'cloudflare-edit',name:'Cloudflare Security Audit',subtitle:'مونتاج عبدالله خريسات',kind:'creator',description:'Edited by Abdallah Khraisat. The opening shot shows the background cutout around his head.'});
+scenes.push({id:'cloudflare-edit',name:'Cloudflare Security Audit',subtitle:'قصّ الخلفية حول الرأس',kind:'creator',description:'The opening shot uses a cutout to place the graphic behind the presenter’s head.'});
 fs.writeFileSync('gallery/catalog.json',JSON.stringify(scenes,null,2)+'\n');

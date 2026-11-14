@@ -11,11 +11,11 @@ Five motion graphics for vertical video, with Arabic and English examples. Use C
 
 <table><tr>${scenes.slice(0,3).map(card).join('')}</tr><tr>${scenes.slice(3).map(card).join('')}</tr></table>
 
-### Creator edit
+### Reel example
 
 <a href="${root}?clip=cloudflare-edit"><img src="gallery/previews/cloudflare-edit.webp" width="200" alt="Cloudflare reel opening with presenter cutout"></a>
 
-**Cloudflare Security Audit** · Edited by Abdallah Khraisat. The opening shot places his head in front of the graphic. The full 43-second reel plays silently in the gallery.
+**Cloudflare Security Audit** · The opening shot uses a cutout to place the graphic behind the presenter’s head.
 
 ### Make your own
 

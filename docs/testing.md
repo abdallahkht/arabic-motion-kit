@@ -21,4 +21,4 @@ Optional transcription was installed and run on eight seconds of Arabic speech u
 
 Recorded audio, scene anchors, short caption groups and synthesized SFX were integrated into an eight-second QA render. This checks integration, not transcription accuracy or a listening review. Transparent ProRes export was tested at 1080×1920 with an alpha-bearing pixel format. Source footage and examples were not color-graded.
 
-The v0.2.0 gallery features five silent animations and a separate creator-edited Cloudflare reel.
+The v0.2.0 gallery features five silent animations and a separate Cloudflare reel example.

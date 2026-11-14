@@ -1,4 +1,4 @@
-const catalog=await fetch('catalog.json?v=2').then(response=>response.json());
+const catalog=await fetch('catalog.json?v=2.1').then(response=>response.json());
 const dialog=document.querySelector('#demo'),player=document.querySelector('#demo-video');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const copy=document.querySelector('#copy'),pause=document.querySelector('#pause');

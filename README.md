@@ -6,11 +6,11 @@ Five motion graphics for vertical video, with Arabic and English examples. Use C
 
 <table><tr><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=cutaway"><img src="gallery/previews/cutaway.webp" width="165" alt="Cutaway"></a><br><b>Cutaway</b><br>ماذا وراء الريل؟</td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=campaign-map"><img src="gallery/previews/campaign-map.webp" width="165" alt="Campaign Map"></a><br><b>Campaign Map</b><br>رحلة حول العالم</td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=scale-reveal"><img src="gallery/previews/scale-reveal.webp" width="165" alt="Scale Reveal"></a><br><b>Scale Reveal</b><br>مليون ورقة فوق بعض</td></tr><tr><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=iceberg"><img src="gallery/previews/iceberg.webp" width="165" alt="Iceberg"></a><br><b>Iceberg</b><br>خلف كواليس الريل</td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=ranking-bars"><img src="gallery/previews/ranking-bars.webp" width="165" alt="Ranking Bars"></a><br><b>Ranking Bars</b><br>سباق المشاهدات</td></tr></table>
 
-### Creator edit
+### Reel example
 
 <a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=cloudflare-edit"><img src="gallery/previews/cloudflare-edit.webp" width="200" alt="Cloudflare reel opening with presenter cutout"></a>
 
-**Cloudflare Security Audit** · Edited by Abdallah Khraisat. The opening shot places his head in front of the graphic. The full 43-second reel plays silently in the gallery.
+**Cloudflare Security Audit** · The opening shot uses a cutout to place the graphic behind the presenter’s head.
 
 ### Make your own
 
