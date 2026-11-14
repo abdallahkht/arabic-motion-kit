@@ -1,7 +1,7 @@
 """Build a ZIP only from reviewed, tracked repository files."""
 import subprocess,zipfile
 from pathlib import Path
-root=Path(__file__).resolve().parents[1];dest=root/'renders/arabic-motion-kit-v0.1.0.zip';dest.parent.mkdir(exist_ok=True)
+root=Path(__file__).resolve().parents[1];dest=root/'renders/arabic-motion-kit.zip';dest.parent.mkdir(exist_ok=True)
 files=subprocess.check_output(['git','ls-files','-z'],cwd=root).decode().split('\0')
 if not any(files):raise SystemExit('No tracked files. Stage the reviewed release files first.')
 with zipfile.ZipFile(dest,'x',zipfile.ZIP_DEFLATED) as z:

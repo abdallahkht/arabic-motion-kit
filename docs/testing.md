@@ -15,8 +15,10 @@ Windows/Linux and every possible user video are not tested. See the release note
 
 ## Final local checks
 
-All 63 gallery MP4s were probed: video streams only, no audio tracks. The desktop gallery, 390px mobile layout, 42-animation filter, 16-effect filter, Arabic search, modal playback and play/pause were exercised. No horizontal overflow was observed in the mobile DOM.
+In the archived v0.1.0 gallery, all 63 MP4s were probed: video streams only, no audio tracks. The desktop gallery, 390px mobile layout, 42-animation filter, 16-effect filter, Arabic search, modal playback and play/pause were exercised. No horizontal overflow was observed in the mobile DOM.
 
 Optional transcription was installed and run on eight seconds of Arabic speech using Python 3.12 and Whisper tiny (26 word timings). Python 3.15 was incompatible with the optional inference dependency; setup now selects Python 3.10–3.13. PyAV 19 changed an API required by faster-whisper, so PyAV is pinned to tested 15.1.0. Arabic recognition still needs correction by the assistant/member. The default small model was not the smoke-test model.
 
 Recorded audio, scene anchors, short caption groups and synthesized SFX were integrated into an eight-second QA render. This checks integration, not transcription accuracy or a listening review. Transparent ProRes export was tested at 1080×1920 with an alpha-bearing pixel format. Source footage and examples were not color-graded.
+
+The v0.2.0 gallery features five silent animations and a separate creator-edited Cloudflare reel.

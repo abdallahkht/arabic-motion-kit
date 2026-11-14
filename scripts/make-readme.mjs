@@ -1,8 +1,38 @@
-import fs from 'node:fs';import {animations,effects} from '../src/catalog.mjs';
-const base='https://abdallahkht.github.io/arabic-motion-kit/';
-const cards=entries=>'<table>\n'+Array.from({length:Math.ceil(entries.length/4)},(_,i)=>'<tr>'+entries.slice(i*4,i*4+4).map(x=>`<td width="25%" align="center"><a href="${base}"><img src="gallery/previews/${x.id}.webp" width="100%" alt="${x.name}"></a><br><b>${x.name}</b><br><code>${x.id}</code></td>`).join('')+'</tr>').join('\n')+'\n</table>\n';
-const ex=['next-word','ai-training','face-unlock','solar-power','fiber-internet'].map(id=>({id:'explain-'+id,name:JSON.parse(fs.readFileSync(`examples/${id}.json`)).title}));
-let md=`<p align="center"><a href="${base}"><img src="gallery/banner.webp" width="100%" alt="Arabic Motion Kit — أفكار تتحول إلى حركة وشرح ومؤثرات بالعربي"></a></p>\n\n# Arabic Motion Kit\n\n**قل الفكرة. وشاهدها تتحرك.**\n\nمهارات عربية لـClaude Code وCodex: 42 إعداد حركة، 16 مؤثراً على فيديوهاتك، وخمس شروحات تعليمية قابلة للتعديل. كود وأمثلة أصلية، وخط عربي ومؤثرات صوتية مرفقة.\n\n[المعرض المتحرك](${base}) · [تحميل ZIP](https://github.com/abdallahkht/arabic-motion-kit/archive/refs/heads/main.zip) · [دليل الإعداد](docs/setup-ar.md) · [الأوامر](docs/commands-ar.md)\n\n## ثلاث مهارات\n\n| المهارة | تعطيها | تحصل على |\n|---|---|---|\n| \`animate\` | فكرة حركة أو كلمات وأرقام | عنوان، مقارنة، رسم، واجهة أو طبقة شفافة |\n| \`explain\` | جملة مثل «اشرح كيف يعمل…» | بحث ونص ومشاهد؛ ثم فيديو بصوتك بعد التسجيل |\n| \`video-fx\` | فيديوك والمؤثر والوقت أو الكلمة | مؤثر في المقطع، مع فصل الشخص عند الحاجة |\n\nالمساعد يجهّز الملفات وينفّذ الخطوات. أسلوبك ومهاراتك الحالية تبقى المرجع. هذه المهارات عامة، وأسماؤها ليست أسماء أشخاص.\n\n## ابدأ هنا\n\nنزّل ZIP وفك الضغط، ثم افتح المجلد في Claude Code أو Codex وقل:\n\n> اقرأ README وثبّت هذا المشروع، ثم جهّز لي أول حركة بالعربي.\n\nتحتاج Node.js 22+ وFFmpeg وحسابك الخاص في المساعد. أو نفّذ:\n\n\`\`\`bash\nnpm install\nnpm run setup\n\`\`\`\n\nأعد فتح جلسة المساعد. [التعليمات بالعربي، خطوة خطوة](docs/setup-ar.md).\n\n## شرح كامل من فكرة\n\n> استخدم explain: اشرح كيف يختار نموذج اللغة تكملة الجملة. بالعربي، بمشاهد واضحة ومصادر، ثم جهّز النص لأسجله بصوتي.\n\nالمساعد يبحث، يكتب النص، ويختار المشاهد. يمكنك رؤية معاينة صامتة أولاً؛ بعد تسجيلك يُضبط التوقيت والكابشن على صوتك. لا يوجد صوت اصطناعي مفروض ولا استنساخ صوت. الأمثلة التالية صامتة، وخططها ومصادرها في [examples](examples).\n\n${cards(ex)}\n## مؤثرات على تصويرك\n\n> استخدم video-fx echo على كلمة «الفكرة» في فيديوي. حافظ على لوني، ولا تغطِ وجهي.\n\nفصل الخلفية محلي وحقيقي للمؤثرات التي تحتاجه. المواضع قابلة للتعديل، ويجب فحصها على تصويرك؛ لا يوجد تتبع رأس تلقائي في هذا الإصدار.\n\n${cards(effects.map(x=>({id:'fx-'+x.id,name:x.name})))}\n## الحركات\n\n> استخدم animate layer-stack لشرح طبقات المونتاج: الصورة والحركة والكابشن والصوت.\n\nالنصوص والألوان والأرقام قابلة للتغيير. الأرقام في الأمثلة توضيحية، والخرائط رسومات تعليمية حتى تضيف بيانات خريطة حقيقية.\n\n`;
-for(const category of [...new Set(animations.map(x=>x.category))])md+=`### ${category}\n\n`+cards(animations.filter(x=>x.category===category))+'\n';
-md+=`## كيف تعمل الأدوات؟\n\n\`\`\`mermaid\nflowchart LR\n  idea["فكرتك أو فيديوك"] --> assistant["Claude أو Codex + المهارة"]\n  assistant --> research["مصادر ولقطات عند الحاجة"]\n  research --> project["مشاهد وملفات قابلة للتعديل"]\n  project --> review["فحص ومعاينة"]\n  review --> output["فيديو جاهز"]\n\`\`\`\n\n| المجلد | ما فيه |\n|---|---|\n| [skills](skills) | المهارات الثلاث |\n| [catalog](catalog) | كل حركة وإعداداتها العربية |\n| [src](src) | بناء المشاهد والمؤثرات وأداة الأوامر |\n| [examples](examples) | خطط الشروحات وقالب مشهد مخصص وتصوير للتجربة |\n| [assets/sounds](assets/sounds) | ثمانية أصوات أصلية قصيرة |\n| [gallery](gallery) | 63 مثالاً متحركاً بلا مسار صوت |\n| [docs](docs) | الإعداد والأوامر والحدود والتراخيص |\n\n## مع محرر الريلز\n\nهذه مكتبة إنشاء الحركة والشرح. [Reel Studio](https://github.com/abdallahkht/abdallah-reel-studio) مشروع منفصل لمراجعة الفيديو النهائي وتصحيح القصات الصغيرة. يمكنك استخدام هذه المكتبة وحدها، أو مع المحرر ومهارات المونتاج الخاصة بك.\n\n## قبل الاستخدام\n\nالرسومات الحالية vector و2.5D. المعرض صامت بشكل دائم؛ الفيديوهات ليس فيها مسار صوت يمكن تشغيله. الفيديو النهائي الخاص بك يمكن أن يحتوي تسجيلك والمؤثرات. صور الواجهات الحقيقية والبحث على الإنترنت يستخدمان الأدوات المتاحة عند المساعد، وليسا خدمة تلقائية داخل أمر الرندر. [التفاصيل والحدود](docs/capabilities-ar.md).\n\nتم اختبار الإصدار على Apple Silicon Mac؛ Windows وLinux لم يُختبرا فعلياً. [ما اختبرناه](docs/testing.md).\n\nالكود الأصلي بترخيص MIT. الخط والاعتماديات وتصوير الشخص لها شروطها المبينة في [المصادر والتراخيص](docs/credits.md). لا توجد ملفات دورة مدفوعة أو مكتبة أصوات مشتراة ضمن التحميل.\n`;
+import fs from 'node:fs';
+const root='https://abdallahkht.github.io/arabic-motion-kit/';
+const all=JSON.parse(fs.readFileSync('gallery/catalog.json'));
+const scenes=all.filter(x=>x.kind==='animation');
+const card=x=>`<td align="center"><a href="${root}?clip=${x.id}"><img src="gallery/previews/${x.id}.webp" width="165" alt="${x.name}"></a><br><b>${x.name}</b><br>${x.subtitle}</td>`;
+const md=`# Arabic Motion Kit
+
+Five motion graphics for vertical video, with Arabic and English examples. Use Claude Code or Codex to adapt the words and timing to your reel.
+
+[Open the gallery](${root}) · [Download the kit](https://github.com/abdallahkht/arabic-motion-kit/releases/latest/download/arabic-motion-kit.zip) · [دليل الإعداد بالعربي](docs/setup-ar.md)
+
+<table><tr>${scenes.slice(0,3).map(card).join('')}</tr><tr>${scenes.slice(3).map(card).join('')}</tr></table>
+
+### Creator edit
+
+<a href="${root}?clip=cloudflare-edit"><img src="gallery/previews/cloudflare-edit.webp" width="200" alt="Cloudflare reel opening with presenter cutout"></a>
+
+**Cloudflare Security Audit** · Edited by Abdallah Khraisat. The opening shot places his head in front of the graphic. The full 43-second reel plays silently in the gallery.
+
+### Make your own
+
+Download and unzip the kit. Open the folder in Claude Code or Codex and say:
+
+> اقرأ دليل الإعداد، جهّز المشروع، واعمل لي حركة Cutaway بالعربي عن فكرة الريل.
+
+Install Node.js 22+ and FFmpeg, run \`npm install\` and \`npm run setup\`, then reopen your assistant session. The kit includes three skills: **animate** for a single motion graphic, **explain** for a narrated sequence, and **video-fx** for effects on footage.
+
+**Cutaway** runs directly from this kit. Change the five labels in [its settings](catalog/cutaway/example.json). **Campaign Map, Scale Reveal, Iceberg and Ranking Bars** use the existing template engine with [our bilingual settings](examples/featured). To render these four yourself, point the assistant to your installed [template pack](https://github.com/ctskool/chase-animations). The finished MP4s play without installing either engine.
+
+\`\`\`sh
+npm run motion -- animate cutaway --out work/my-cutaway
+npm run motion -- render work/my-cutaway --out renders/my-cutaway.mp4
+node scripts/featured.mjs iceberg "/path/to/installed-template-pack" renders/my-iceberg.mp4
+\`\`\`
+
+[Commands](docs/commands-ar.md) · [Sources and media permissions](docs/credits.md) · [Reel Studio editor](https://github.com/abdallahkht/abdallah-reel-studio)
+`;
 fs.writeFileSync('README.md',md);

@@ -1,0 +1,21 @@
+{
+  "title": "رحلة حول العالم",
+  "origin": "Sanlúcar",
+  "originStage": "1519",
+  "place1": "Rio de Janeiro",
+  "stage1": "1519",
+  "place2": "مضيق ماجلان",
+  "stage2": "1520",
+  "place3": "Tidore",
+  "stage3": "1521",
+  "place4": "رأس الرجاء الصالح",
+  "stage4": "1522",
+  "place5": "Sanlúcar",
+  "stage5": "1522",
+  "countLabel": "SHIPS",
+  "heroValue": "3 YEARS",
+  "heroLine": "خمس سفن انطلقت. واحدة رجعت.",
+  "arrow": "#AD3326",
+  "originLat": 36.78,
+  "originLon": -6.35
+}

@@ -1,0 +1,35 @@
+// Render the member's own template installation with the featured gallery settings.
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {spawnSync} from 'node:child_process';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const [id,packPath,destination,configuration]=process.argv.slice(2);
+const names=['campaign-map','scale-reveal','iceberg','ranking-bars'];
+if(!names.includes(id)||!packPath||!destination)throw Error('Usage: node scripts/featured.mjs <scene> <installed-template-pack> <new-output.mp4> [custom-settings.json]');
+const output=path.resolve(destination);
+if(fs.existsSync(output))throw Error('Choose a new output filename.');
+const api=await import(pathToFileURL(path.resolve(packPath,'shared/build.mjs')));
+const block=api.loadBlock(id);
+const vars=api.resolveVars(block,configuration||path.join(root,'examples/featured',id+'.json'));
+const variant='full', fps=30;
+const timing=api.resolveTiming(block,variant,{fps,hold:1.85});
+const workDir=fs.mkdtempSync(path.join(os.tmpdir(),'arabic-featured-'));
+const dir=api.buildProject({block,variant,vars,timing,workDir,fps});
+const file=path.join(dir,'index.html');
+const font='IBMPlexSansArabic-Bold.ttf';
+fs.copyFileSync(path.join(root,'assets/fonts',font),path.join(dir,'fonts',font));
+let html=fs.readFileSync(file,'utf8').replace(/<html(?: lang="en")?>/,'<html lang="ar">');
+// Register Arabic glyphs under the same face names used by both canvas and DOM measurements.
+const namesUsed=['Anton','Barlow Condensed','Inter Tight','Inter','Libre Caslon Text','Newsreader'];
+const faces=namesUsed.map(name=>`@font-face{font-family:"${name}";src:url("fonts/${font}");font-weight:100 900;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF}`).join('\n');
+html=html.replace('</head>',`<style>${faces}\n#stage :is(.ib-label,#ib-hero-line,#cm-title,#cm-hero-line,#sr-label,#sr-caption,#ranking-title,.ranking-caption-text){unicode-bidi:plaintext;letter-spacing:normal;line-height:1.23}</style></head>`);
+html=html.replace('document.fonts.load(f)','document.fonts.load(f,"العربية Aa")');
+fs.writeFileSync(file,html);
+fs.mkdirSync(path.dirname(output),{recursive:true});
+const cli=JSON.parse(fs.readFileSync(path.join(root,'node_modules/hyperframes/package.json')));
+const bin=typeof cli.bin==='string'?cli.bin:cli.bin.hyperframes;
+const result=spawnSync(process.execPath,[path.resolve(root,'node_modules/hyperframes',bin),'render','--quality','delivery','--fps','30','-o',output],{cwd:dir,stdio:'inherit'});
+if(result.status!==0)throw Error('Render failed. Inspect the local project at '+dir);
+console.log(output);

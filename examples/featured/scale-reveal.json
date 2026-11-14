@@ -1,0 +1,11 @@
+{
+  "heroLabel": "مليون ورقة فوق بعض",
+  "heroValue": "100 m",
+  "caption": "على افتراض سماكة 0.1 ملم للورقة",
+  "heightMetres": 100,
+  "stackMark": "A4",
+  "stack": "#56A9AB",
+  "stackPaper": "#FCF5E8",
+  "accent": "#FFD56A",
+  "skyTop": "#345F90"
+}

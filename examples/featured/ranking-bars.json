@@ -1,0 +1,21 @@
+{
+  "title": "سباق المشاهدات",
+  "subtitle": "Illustrative data · views in thousands",
+  "category1": "Shorts",
+  "category2": "Tutorials",
+  "category3": "Interviews",
+  "category4": "Reviews",
+  "category5": "Updates",
+  "category6": "Live",
+  "heroCategory": "Shorts",
+  "firstPlaceChip": "#1",
+  "units": "K",
+  "yearlyValues": "Year,Shorts,Tutorials,Interviews,Reviews,Updates,Live\n2021,14,58,48,36,28,16\n2022,28,64,52,42,34,21\n2023,45,72,58,49,41,28\n2024,65,79,61,57,48,35\n2025,96,85,68,64,52,41\n2026,124,92,76,72,60,48",
+  "openingCaption": "ست صيغ فيديو تتنافس",
+  "passingTemplate": "passes {name}",
+  "leadingCaption": "takes the lead",
+  "finalCaption": "Shorts takes first place",
+  "axisMax": 140,
+  "color1": "#DB572D",
+  "backgroundBottom": "#F3EEE4"
+}
