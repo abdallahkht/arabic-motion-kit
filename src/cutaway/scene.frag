@@ -112,7 +112,7 @@ vec3 shade(Hit hit,vec3 dir){
     }
     float diffuse=.19+.73*max(0.,dot(n,normalize(vec3(-.8,1.4,1.))))+.28*max(0.,dot(n,normalize(vec3(1.,.5,-.2))));
     vec3 refl=environment(reflect(dir,n),rough);
-    float fres=pow(1.-max(0.,dot(-dir,n)),3.);
+    float fres=pow(1.-clamp(dot(-dir,n),0.,1.),3.);
     vec3 col=pattern*(albedo*diffuse*(1.-.68*metal)+refl*(.065+albedo*metal))+refl*fres*.30;
     if(hit.face>0. && layer<4.){
         float wallDistance=hit.face<2.?min(p.y,p.z):hit.face<3.?min(p.x,p.z):min(p.x,p.y);
@@ -169,7 +169,7 @@ void main(){
     vec3 color=hit.dist<INF?shade(hit,d):bg;
     // The travelling light has a sharp filament, a warm halo, and a soft falloff at each end.
     float beam=abs(uv.x-(mix(-.92,.95,ramp(.13,1.13,time))+.21*uv.y));
-    float gate=ramp(.12,.39,time)*(1.-ramp(.91,1.2,time))*exp(-pow((uv.y-.12)/.58,4.));
+    float gate=ramp(.12,.39,time)*(1.-ramp(.91,1.2,time))*exp(-pow(abs(uv.y-.12)/.58,4.));
     color+=gate*(accent*exp(-beam*87.)*1.2+vec3(1.,.9,.72)*exp(-beam*600.)*4.);
     float coreDist=length(cross(eye,d));
     float exposed=ramp(1.42,2.1,time);
