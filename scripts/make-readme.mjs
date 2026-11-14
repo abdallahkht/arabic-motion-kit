@@ -9,7 +9,7 @@ const md=`# Arabic Motion Kit
 
 Five featured motion graphics and six original animations with editable source for vertical video. Use Claude Code or Codex to adapt the words and timing to your reel.
 
-[Open the gallery](${root}) · [Download the kit](https://github.com/abdallahkht/arabic-motion-kit/releases/latest/download/arabic-motion-kit.zip) · [دليل الإعداد بالعربي](docs/setup-ar.md)
+[Start here after unzipping](START-HERE.md) · [Open the gallery](${root}) · [Download the kit](https://github.com/abdallahkht/arabic-motion-kit/releases/latest/download/arabic-motion-kit.zip) · [دليل الإعداد بالعربي](docs/setup-ar.md)
 
 <table><tr>${scenes.slice(0,3).map(card).join('')}</tr><tr>${scenes.slice(3).map(card).join('')}</tr></table>
 
@@ -90,10 +90,11 @@ flowchart LR
 - **explain** turns a topic into a script and a sequence of scenes. Preview the sequence silently or supply a recording to align the scenes and captions to your words. [Sample scene plan](examples/next-word.json).
 - **video-fx** adds an effect to a shot. For effects behind the presenter, it layers the original footage, the graphic, and the isolated person. [Video effects guide](skills/video-fx/SKILL.md).
 
-**Which scene files do I need?** Cutaway runs directly from the main kit. The six original examples include their own scene code and [render instructions](examples/originals). For Campaign Map, Scale Reveal, Iceberg, and Ranking Bars, use the [bilingual settings](examples/featured) with an installed copy of the [source template pack](https://github.com/ctskool/chase-animations):
+**Rebuild a gallery animation.** Cutaway uses the built-in command above. The other ten animations have [editable scene folders](examples/originals/blocks). For Campaign Map, Scale Reveal, Iceberg, and Ranking Bars, the renderer applies the [gallery settings](examples/featured). Run these commands from the kit folder to render Iceberg:
 
 \`\`\`sh
-node scripts/featured.mjs iceberg "/path/to/installed-template-pack" renders/my-iceberg.mp4
+npm ci --prefix examples/originals
+node scripts/featured.mjs iceberg renders/my-iceberg.mp4
 \`\`\`
 
 | Folder | What you’ll find |
@@ -102,7 +103,7 @@ node scripts/featured.mjs iceberg "/path/to/installed-template-pack" renders/my-
 | [catalog/](catalog) | Built-in animation presets with editable text, colors, and values |
 | [src/](src) | The renderer commands, project builder, effects, and [3D Cutaway source](src/cutaway) |
 | [examples/](examples) | Five explainer plans, a custom scene, sample footage, and the featured settings |
-| [examples/originals/blocks/](examples/originals/blocks) | The six original scenes, each with its code, settings, and README |
+| [examples/originals/blocks/](examples/originals/blocks) | Ten scenes, each with its code, settings, and README |
 | [assets/](assets) | Arabic fonts and eight sound effects |
 | [gallery/media/](gallery/media) | Finished MP4s and poster images |
 | [scripts/](scripts) | Setup, transcription, timing, and publishing tools |
@@ -120,7 +121,7 @@ node scripts/featured.mjs iceberg "/path/to/installed-template-pack" renders/my-
 
 ## Credits
 
-Arabic Motion Kit uses HyperFrames for rendering, GSAP for animation, and IBM Plex Sans Arabic for type. The six original scenes include upstream credits and font notices. See [credits and media permissions](docs/credits.md), [original scene credits](examples/originals/UPSTREAM-CREDITS.md), and the [kit license](LICENSE).
+Arabic Motion Kit uses HyperFrames for rendering, GSAP for animation, and IBM Plex Sans Arabic for type. Font, map data, and dependency notices are included with the scene files. See [credits and media permissions](docs/credits.md), [original scene credits](examples/originals/UPSTREAM-CREDITS.md), and the [kit license](LICENSE).
 
 For frame-by-frame review and small cut corrections, open the finished reel in [Reel Studio](https://github.com/abdallahkht/abdallah-reel-studio).
 `;

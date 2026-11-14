@@ -22,7 +22,7 @@ The branches then become attached tethers. They pull the mascots through one sha
 
 ## What to change
 
-Run `animate vars agent-fan-out` for the full list.
+See [block.json](block.json) for all supported settings.
 
 | Variables | What they are |
 |---|---|

@@ -20,7 +20,7 @@ The default landscape and wording are fictional.
 
 ## What to change
 
-Run `animate vars ink-wash` for the full list.
+See [block.json](block.json) for all supported settings.
 
 | Variables | What they are |
 |---|---|

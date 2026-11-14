@@ -1,13 +1,18 @@
-// Render the member's own template installation with the featured gallery settings.
+// Render the featured gallery settings using the scenes bundled in this kit.
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {spawnSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const [id,packPath,destination,configuration]=process.argv.slice(2);
+const [id,...args]=process.argv.slice(2);
+// Older callers may still pass a source directory before the output filename.
+const customPack=args.length>=2 && fs.existsSync(path.resolve(args[0],'shared/build.mjs'));
+const packPath=customPack?args.shift():path.join(root,'examples/originals');
+const [destination,configuration]=args;
 const names=['campaign-map','scale-reveal','iceberg','ranking-bars'];
-if(!names.includes(id)||!packPath||!destination)throw Error('Usage: node scripts/featured.mjs <scene> <installed-template-pack> <new-output.mp4> [custom-settings.json]');
+if(!names.includes(id)||!destination||args.length>2)throw Error('Usage: node scripts/featured.mjs <scene> <new-output.mp4> [settings.json]');
+if(!fs.existsSync(path.join(packPath,'node_modules/gsap/dist/gsap.min.js')))throw Error('Install the scene dependencies first: npm ci --prefix "'+packPath+'"');
 const output=path.resolve(destination);
 if(fs.existsSync(output))throw Error('Choose a new output filename.');
 const api=await import(pathToFileURL(path.resolve(packPath,'shared/build.mjs')));

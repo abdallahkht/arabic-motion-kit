@@ -2,9 +2,9 @@
 
 Five featured motion graphics and six original animations with editable source for vertical video. Use Claude Code or Codex to adapt the words and timing to your reel.
 
-[Open the gallery](https://abdallahkht.github.io/arabic-motion-kit/) · [Download the kit](https://github.com/abdallahkht/arabic-motion-kit/releases/latest/download/arabic-motion-kit.zip) · [دليل الإعداد بالعربي](docs/setup-ar.md)
+[Start here after unzipping](START-HERE.md) · [Open the gallery](https://abdallahkht.github.io/arabic-motion-kit/) · [Download the kit](https://github.com/abdallahkht/arabic-motion-kit/releases/latest/download/arabic-motion-kit.zip) · [دليل الإعداد بالعربي](docs/setup-ar.md)
 
-<table><tr><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=cutaway"><img src="gallery/previews/cutaway.webp" width="165" alt="Cutaway"></a><br><b>Cutaway</b><br>ماذا وراء الريل؟<br><a href="https://github.com/abdallahkht/arabic-motion-kit/tree/main/src/cutaway">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/catalog/cutaway/example.json">Settings</a></td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=campaign-map"><img src="gallery/previews/campaign-map.webp" width="165" alt="Campaign Map"></a><br><b>Campaign Map</b><br>رحلة حول العالم<br><a href="https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/campaign-map">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/campaign-map.json">Settings</a></td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=scale-reveal"><img src="gallery/previews/scale-reveal.webp" width="165" alt="Scale Reveal"></a><br><b>Scale Reveal</b><br>مليون ورقة فوق بعض<br><a href="https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/scale-reveal">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/scale-reveal.json">Settings</a></td></tr><tr><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=iceberg"><img src="gallery/previews/iceberg.webp" width="165" alt="Iceberg"></a><br><b>Iceberg</b><br>خلف كواليس الريل<br><a href="https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/iceberg">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/iceberg.json">Settings</a></td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=ranking-bars"><img src="gallery/previews/ranking-bars.webp" width="165" alt="Ranking Bars"></a><br><b>Ranking Bars</b><br>سباق المشاهدات<br><a href="https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/ranking-bars">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/ranking-bars.json">Settings</a></td></tr></table>
+<table><tr><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=cutaway"><img src="gallery/previews/cutaway.webp" width="165" alt="Cutaway"></a><br><b>Cutaway</b><br>ماذا وراء الريل؟<br><a href="https://github.com/abdallahkht/arabic-motion-kit/tree/main/src/cutaway">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/catalog/cutaway/example.json">Settings</a></td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=campaign-map"><img src="gallery/previews/campaign-map.webp" width="165" alt="Campaign Map"></a><br><b>Campaign Map</b><br>رحلة حول العالم<br><a href="https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/campaign-map">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/campaign-map.json">Settings</a></td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=scale-reveal"><img src="gallery/previews/scale-reveal.webp" width="165" alt="Scale Reveal"></a><br><b>Scale Reveal</b><br>مليون ورقة فوق بعض<br><a href="https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/scale-reveal">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/scale-reveal.json">Settings</a></td></tr><tr><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=iceberg"><img src="gallery/previews/iceberg.webp" width="165" alt="Iceberg"></a><br><b>Iceberg</b><br>خلف كواليس الريل<br><a href="https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/iceberg">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/iceberg.json">Settings</a></td><td align="center"><a href="https://abdallahkht.github.io/arabic-motion-kit/?clip=ranking-bars"><img src="gallery/previews/ranking-bars.webp" width="165" alt="Ranking Bars"></a><br><b>Ranking Bars</b><br>سباق المشاهدات<br><a href="https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/ranking-bars">Scene code</a> · <a href="https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/ranking-bars.json">Settings</a></td></tr></table>
 
 ### Original motion examples
 
@@ -83,10 +83,11 @@ flowchart LR
 - **explain** turns a topic into a script and a sequence of scenes. Preview the sequence silently or supply a recording to align the scenes and captions to your words. [Sample scene plan](examples/next-word.json).
 - **video-fx** adds an effect to a shot. For effects behind the presenter, it layers the original footage, the graphic, and the isolated person. [Video effects guide](skills/video-fx/SKILL.md).
 
-**Which scene files do I need?** Cutaway runs directly from the main kit. The six original examples include their own scene code and [render instructions](examples/originals). For Campaign Map, Scale Reveal, Iceberg, and Ranking Bars, use the [bilingual settings](examples/featured) with an installed copy of the [source template pack](https://github.com/ctskool/chase-animations):
+**Rebuild a gallery animation.** Cutaway uses the built-in command above. The other ten animations have [editable scene folders](examples/originals/blocks). For Campaign Map, Scale Reveal, Iceberg, and Ranking Bars, the renderer applies the [gallery settings](examples/featured). Run these commands from the kit folder to render Iceberg:
 
 ```sh
-node scripts/featured.mjs iceberg "/path/to/installed-template-pack" renders/my-iceberg.mp4
+npm ci --prefix examples/originals
+node scripts/featured.mjs iceberg renders/my-iceberg.mp4
 ```
 
 | Folder | What you’ll find |
@@ -95,7 +96,7 @@ node scripts/featured.mjs iceberg "/path/to/installed-template-pack" renders/my-
 | [catalog/](catalog) | Built-in animation presets with editable text, colors, and values |
 | [src/](src) | The renderer commands, project builder, effects, and [3D Cutaway source](src/cutaway) |
 | [examples/](examples) | Five explainer plans, a custom scene, sample footage, and the featured settings |
-| [examples/originals/blocks/](examples/originals/blocks) | The six original scenes, each with its code, settings, and README |
+| [examples/originals/blocks/](examples/originals/blocks) | Ten scenes, each with its code, settings, and README |
 | [assets/](assets) | Arabic fonts and eight sound effects |
 | [gallery/media/](gallery/media) | Finished MP4s and poster images |
 | [scripts/](scripts) | Setup, transcription, timing, and publishing tools |
@@ -113,6 +114,6 @@ node scripts/featured.mjs iceberg "/path/to/installed-template-pack" renders/my-
 
 ## Credits
 
-Arabic Motion Kit uses HyperFrames for rendering, GSAP for animation, and IBM Plex Sans Arabic for type. The six original scenes include upstream credits and font notices. See [credits and media permissions](docs/credits.md), [original scene credits](examples/originals/UPSTREAM-CREDITS.md), and the [kit license](LICENSE).
+Arabic Motion Kit uses HyperFrames for rendering, GSAP for animation, and IBM Plex Sans Arabic for type. Font, map data, and dependency notices are included with the scene files. See [credits and media permissions](docs/credits.md), [original scene credits](examples/originals/UPSTREAM-CREDITS.md), and the [kit license](LICENSE).
 
 For frame-by-frame review and small cut corrections, open the finished reel in [Reel Studio](https://github.com/abdallahkht/abdallah-reel-studio).

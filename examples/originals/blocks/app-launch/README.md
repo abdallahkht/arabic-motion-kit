@@ -23,7 +23,7 @@ A large studio phone receives a transaction. Its balance ticks and its chart dra
 
 ## What to change
 
-Run `animate vars app-launch` for the full list.
+See [block.json](block.json) for all supported settings.
 
 | Variables | What they are |
 |---|---|

@@ -1,6 +1,6 @@
 # Sources and licenses
 
-The Cutaway implementation, gallery, Arabic configurations and synthesized sound generator were created for this kit. Four featured videos (Campaign Map, Scale Reveal, Iceberg and Ranking Bars) were rendered from an external template pack with bilingual settings. The project owner confirmed permission to publish the adapted videos. The templates and those four videos are excluded from this repository’s MIT grant. [Source templates at the tested revision](https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks). The campaign map uses world-atlas / Natural Earth outlines. See the [upstream credits](https://github.com/ctskool/chase-animations/blob/95d8925f41884bfce339f546cec109f3c731d209/docs/CREDITS.md).
+The Cutaway implementation, gallery, Arabic presets and sound generator were created for this kit. The ten bundled template scenes and their shared runtime are distributed with permission. Their source and demonstration renders are outside the kit’s MIT grant. The campaign map includes world-atlas outlines based on Natural Earth data. [Scene asset notices](../examples/originals/UPSTREAM-CREDITS.md).
 
 - The Cloudflare Security Audit reel is included as a viewing example and is excluded from the MIT grant.
 - Original code, configs and synthesized sounds: MIT, see ../LICENSE.

@@ -12,6 +12,16 @@ for(const {id,sha256} of originals){
   assert.equal(createHash('sha256').update(fs.readFileSync(`gallery/media/${id}.mp4`)).digest('hex'),sha256);
   for(const file of ['block.html','block.css','block.js','block.json'])assert.ok(fs.statSync(`examples/originals/blocks/${id}/${file}`).isFile());
 }
+for(const scene of catalog.filter(scene=>scene.kind!=='creator')){
+  const source=scene.id==='cutaway'?'src/cutaway':'examples/originals/blocks/'+scene.id;
+  assert.equal(scene.sourceUrl,'https://github.com/abdallahkht/arabic-motion-kit/tree/main/'+source);
+  assert.ok(fs.statSync(source).isDirectory(),source);
+  if(scene.settingsUrl){
+    const prefix='https://github.com/abdallahkht/arabic-motion-kit/blob/main/';
+    assert.ok(scene.settingsUrl.startsWith(prefix));
+    assert.ok(fs.statSync(scene.settingsUrl.slice(prefix.length)).isFile());
+  }
+}
 for(const id of ids){
   for(const file of [`media/${id}.mp4`,`media/${id}.jpg`,`previews/${id}.webp`]){
     assert.ok(fs.statSync('gallery/'+file).size>100,file);

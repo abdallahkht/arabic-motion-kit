@@ -20,7 +20,7 @@ Delivery gets the biggest beat: the van brakes, the building lifts, its enlarged
 
 ## What to change
 
-Run `animate vars isometric-flow` for the full list.
+See [block.json](block.json) for all supported settings.
 
 | Variables | What they are |
 |---|---|

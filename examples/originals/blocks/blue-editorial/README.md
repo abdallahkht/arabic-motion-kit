@@ -18,7 +18,7 @@ An electric-blue editorial cover with huge italic words and smaller black-weight
 
 ## What to change
 
-Run `animate vars blue-editorial` for the full list.
+See [block.json](block.json) for all supported settings.
 
 | Variables | What they are |
 |---|---|

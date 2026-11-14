@@ -12,36 +12,36 @@
     "id": "campaign-map",
     "name": "Campaign Map",
     "subtitle": "رحلة حول العالم",
-    "prompt": "Render the featured campaign-map preset with my template pack. Adapt the stops and labels to my route.",
+    "prompt": "Render the featured campaign-map preset from the bundled scene code. Adapt the stops and labels to my route.",
     "kind": "animation",
-    "sourceUrl": "https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/campaign-map",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/campaign-map",
     "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/campaign-map.json"
   },
   {
     "id": "scale-reveal",
     "name": "Scale Reveal",
     "subtitle": "مليون ورقة فوق بعض",
-    "prompt": "Render the featured scale-reveal preset with my template pack. Check the units before changing the stack height.",
+    "prompt": "Render the featured scale-reveal preset from the bundled scene code. Check the units before changing the stack height.",
     "kind": "animation",
-    "sourceUrl": "https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/scale-reveal",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/scale-reveal",
     "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/scale-reveal.json"
   },
   {
     "id": "iceberg",
     "name": "Iceberg",
     "subtitle": "خلف كواليس الريل",
-    "prompt": "Render the featured iceberg preset with my template pack. Use my visible result at the tip and four hidden steps below.",
+    "prompt": "Render the featured iceberg preset from the bundled scene code. Use my visible result at the tip and four hidden steps below.",
     "kind": "animation",
-    "sourceUrl": "https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/iceberg",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/iceberg",
     "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/iceberg.json"
   },
   {
     "id": "ranking-bars",
     "name": "Ranking Bars",
     "subtitle": "سباق المشاهدات",
-    "prompt": "Render the featured ranking-bars preset with my template pack. Use my categories and values.",
+    "prompt": "Render the featured ranking-bars preset from the bundled scene code. Use my categories and values.",
     "kind": "animation",
-    "sourceUrl": "https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/ranking-bars",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/ranking-bars",
     "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/ranking-bars.json"
   },
   {

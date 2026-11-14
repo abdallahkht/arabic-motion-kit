@@ -22,4 +22,4 @@ npm run render -- isometric-flow ../../renders/isometric-flow.mp4
 
 Use any scene folder name in the command. To change the words or colors, pass a JSON file with overrides as the last argument. See each scene’s README and `block.json` for its supported settings. The six original MP4 files are included in the main kit download.
 
-[Original source revision](https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209) · [Third-party credits](UPSTREAM-CREDITS.md). The source in `blocks/` and `shared/` and the original media retain their upstream terms and are excluded from the kit’s MIT grant.
+The scene source, shared runtime and original media are distributed with permission under separate terms. [Asset and dependency notices](UPSTREAM-CREDITS.md).

@@ -20,7 +20,7 @@ The mascot peers far over its ledge, gulps, leans away and sinks into a deep cro
 
 ## What to change
 
-Run `animate vars hours-collapse` for the full list.
+See [block.json](block.json) for all supported settings.
 
 | Variables | What they are |
 |---|---|
