@@ -1,5 +1,5 @@
 // Original Arabic examples. All numbers are explicitly illustrative, not product claims.
-const group=(category, rows)=>rows.map(([id,name,title,items,values])=>({id,name,category,title,items:items||[],values:values||[],duration:4,theme:'studio'}));
+const group=(category, rows)=>rows.map(([id,name,title,items,values])=>({id,name,category,title,items:items||[],values:values||[],duration:id==='cutaway'?5.9:4,theme:'studio'}));
 export const animations=[
  ...group('عناوين',[
  ['focus-word','كلمة تصل في وقتها','الفكرة تبدأ بكلمة',['فكّر','جرّب','اصنع']],
@@ -39,7 +39,7 @@ export const animations=[
  ['blueprint','رسم هندسي','افهم البناء قبل التفاصيل',['المدخل','المعالجة','المخرج']],
  ['iceberg','فوق السطح وتحته','النتيجة هي الجزء الظاهر',['النتيجة','التجربة','الوقت','المراجعة']],
  ['scale-ladder','مقارنة الحجم','الأرقام تحتاج سياقاً',['خطوة','مشروع','نظام'],[1,10,100]],
- ['cutaway','مقطع داخلي','انظر داخل الفكرة',['الواجهة','المنطق','البيانات']],
+ ['cutaway','مقطع داخلي','شو اللي بخلّي الريل ينجح؟',['الشكل','المونتاج','الإيقاع','القصة','الفكرة']],
  ['campaign-map','مسارات متعددة','من نقطة إلى عدة وجهات',['مركز','وجهة أ','وجهة ب','وجهة ج']]
  ]),
  ...group('برمجة ووكلاء',[

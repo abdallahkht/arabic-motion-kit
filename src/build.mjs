@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {cutawayComposition} from './cutaway/composition.mjs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {drawVisual,themes,escapeHTML as esc} from './visuals.mjs';
@@ -68,6 +69,9 @@ export function buildProject(plan,destination,baseDir=process.cwd()){
    // Custom template must register __SCENE_ID__; replace at build time, never rewrite a finished project.
    if(!html.includes('__SCENE_ID__'))throw Error('Use __SCENE_ID__ for custom composition and timeline id.');
    fs.writeFileSync(path.join(out,`compositions/${id}.html`),html.replaceAll('__SCENE_ID__',id));
+  }else if(scene.id==='cutaway'){
+   const config={...findAnimation('cutaway'),...scene};
+   fs.writeFileSync(path.join(out,`compositions/${id}.html`),cutawayComposition(config,id,width,height,plan.transparent,fonts));
   }else{
    let {config:c,parts,moves,p}=sceneVisual(scene,id),compact=height/width<1.2;
    const title=c.title||'',subtitle=c.subtitle||'',note=c.note||((c.values?.length||['route-map','campaign-map'].includes(c.id))?'مثال توضيحي':'');
