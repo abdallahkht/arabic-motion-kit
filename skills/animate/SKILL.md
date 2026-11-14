@@ -11,6 +11,8 @@ Turn the request into a finished visual and its editable project. This is a moti
 
 When a user refers to the current gallery, use the exact featured workflow. Cutaway uses the built-in animate command. For campaign-map, scale-reveal, iceberg or ranking-bars, use scripts/featured.mjs with their installed source template pack and our examples/featured settings. Ask for the pack location if unavailable. For direct use as B-roll, the completed silent MP4 is already in gallery/media. The Cloudflare reel is a creator edit.
 
+For Isometric flow, Blue editorial, Ink Wash, Hours collapse, Agent fan-out and App launch in the Original motion examples gallery, use the bundled source and renderer in `examples/originals`. Run `npm ci` there once and follow its README. Use the original MP4 in `gallery/media` when a finished clip is requested.
+
 ## Locate the kit
 
 Resolve this skill's real file location; the repository is two directories above it. On a copied Windows installation read `app-location.txt`. Work from that repository. Read `docs/commands-ar.md` and `catalog/animations.json`. Run `npm run setup -- --check`. If dependencies are missing, follow `docs/setup-ar.md` without overwriting existing skills.

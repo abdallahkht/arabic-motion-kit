@@ -3,13 +3,21 @@ const root='https://abdallahkht.github.io/arabic-motion-kit/';
 const all=JSON.parse(fs.readFileSync('gallery/catalog.json'));
 const scenes=all.filter(x=>x.kind==='animation');
 const card=x=>`<td align="center"><a href="${root}?clip=${x.id}"><img src="gallery/previews/${x.id}.webp" width="165" alt="${x.name}"></a><br><b>${x.name}</b><br>${x.subtitle}</td>`;
+const originals=all.filter(x=>x.kind==='original');
+const originalCard=x=>`<td align="center"><a href="${root}?clip=${x.id}"><img src="gallery/previews/${x.id}.webp" width="165" alt="${x.name}"></a><br><b>${x.name}</b><br><a href="examples/originals/blocks/${x.id}">Scene code</a></td>`;
 const md=`# Arabic Motion Kit
 
-Five motion graphics for vertical video, with Arabic and English examples. Use Claude Code or Codex to adapt the words and timing to your reel.
+Five featured motion graphics and six original animations with editable source for vertical video. Use Claude Code or Codex to adapt the words and timing to your reel.
 
 [Open the gallery](${root}) · [Download the kit](https://github.com/abdallahkht/arabic-motion-kit/releases/latest/download/arabic-motion-kit.zip) · [دليل الإعداد بالعربي](docs/setup-ar.md)
 
 <table><tr>${scenes.slice(0,3).map(card).join('')}</tr><tr>${scenes.slice(3).map(card).join('')}</tr></table>
+
+### Original motion examples
+
+<table><tr>${originals.slice(0,3).map(originalCard).join('')}</tr><tr>${originals.slice(3).map(originalCard).join('')}</tr></table>
+
+[Files and render instructions](examples/originals)
 
 ### Reel example
 

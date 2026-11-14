@@ -1,4 +1,4 @@
-const catalog=await fetch('catalog.json?v=2.1').then(response=>response.json());
+const catalog=await fetch('catalog.json?v=3').then(response=>response.json());
 const dialog=document.querySelector('#demo'),player=document.querySelector('#demo-video');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const copy=document.querySelector('#copy'),pause=document.querySelector('#pause');
@@ -25,9 +25,15 @@ for(const item of catalog){
   const button=document.createElement('button');button.className='video-button';button.setAttribute('aria-label','Play '+item.name);
   const v=document.createElement('video');v.src='media/'+item.id+'.mp4?v=2';v.poster='media/'+item.id+'.jpg?v=2';v.muted=true;v.loop=true;v.playsInline=true;v.preload='metadata';
   const heading=document.createElement('h3');heading.textContent=item.name;
-  const subtitle=document.createElement('p');subtitle.dir='auto';subtitle.textContent=item.subtitle;
-  button.append(v);button.onclick=()=>openClip(item);card.append(button,heading,subtitle);
-  document.querySelector(item.kind==='creator'?'#creator-card':'#grid').append(card);observer.observe(v);
+  const subtitle=document.createElement('p');subtitle.dir='auto';subtitle.textContent=item.subtitle||'';
+  button.append(v);button.onclick=()=>openClip(item);card.append(button,heading);
+  if(item.subtitle)card.append(subtitle);
+  if(item.kind==='original'){
+    const source=document.createElement('a');
+    source.href='https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/'+item.id;
+    source.textContent='View code';card.append(source);
+  }
+  document.querySelector({creator:'#creator-card',animation:'#grid',original:'#original-grid'}[item.kind]).append(card);observer.observe(v);
 }
 document.querySelector('#close').onclick=()=>dialog.close();
 dialog.onclose=()=>{player.pause();if(!reduced)document.querySelectorAll('.card video').forEach(v=>{const r=v.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)v.play().catch(()=>{});});};

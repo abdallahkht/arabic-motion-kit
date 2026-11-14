@@ -11,3 +11,5 @@ The Cutaway implementation, gallery, Arabic configurations and synthesized sound
 - Technical sources for the five explainers are listed inside each JSON plan. Values labelled illustrative are examples, not research measurements.
 
 This project is independent. It is not an official product of Anthropic, OpenAI, HeyGen or any brand mentioned in examples. No private font, API key, paid sound library or private skill is included.
+
+The six original examples are included with their matching source and assets. See [provenance and credits](../examples/originals/README.md). The kit’s MIT license does not apply to those upstream works.

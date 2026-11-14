@@ -1,0 +1,44 @@
+[
+  {
+    "id": "isometric-flow",
+    "name": "Isometric flow",
+    "kind": "original",
+    "description": "A miniature 3D process: an immediate opening, a van that triggers each step, and a delivery arrival with a building punch and a pulse back along the road.",
+    "sha256": "b1e6de6617532a197089cfe38d14d8dd6f4512a2f3f4e38ef9811bfd39f5037a"
+  },
+  {
+    "id": "blue-editorial",
+    "name": "Blue editorial",
+    "kind": "original",
+    "description": "An ultramarine editorial cover with frame-filling italic words, a kicker snap, a slanted reveal and four strips striking into an oversized final word.",
+    "sha256": "17eac99450a57e13c6bbacc89ae00781e144749e969027e66554d4c3f717a4ab"
+  },
+  {
+    "id": "ink-wash",
+    "name": "Ink Wash",
+    "kind": "original",
+    "description": "Large upright lettering and a mottled red sun open on rice paper. Mountain washes bend beneath clear title silhouettes. A rower crosses into open water, draws a trailing wake and completes an oar stroke as the pine finishes. A small, eroded red seal stamps last.",
+    "sha256": "7230ffd98f2c74a6c377dc5b24fa2cbce20c1515b45fdf6cc157a7616450e801"
+  },
+  {
+    "id": "hours-collapse",
+    "name": "Hours collapse",
+    "kind": "original",
+    "description": "Equal calendar hours land from the bottom up. The mascot gulps, crouches and stomps each labelled hour into a sliver as a clock rewinds. The final time slams above a bright terracotta block.",
+    "sha256": "38bb73ae71ae7e80481d2eadbf5d073110ec95ba35fd5c6a4f8bbda7206d8e59"
+  },
+  {
+    "id": "agent-fan-out",
+    "name": "Agent fan-out",
+    "kind": "original",
+    "description": "A prompt opens inside a branching burst. Colourful agents work and finish separately, then attached branches pull them into one pile. The last tick, full count and green result slab land together.",
+    "sha256": "70ed9638de59a5db27f8e1f9dcc1bfd71feede25f815fca25d04a078abe3614d"
+  },
+  {
+    "id": "app-launch",
+    "name": "App launch",
+    "kind": "original",
+    "description": "A broad studio phone receives a transaction. Its camera pill and percentage chip become readable cards, then clear for a much larger transfer payoff with an exact amount and solid accent-colour finish.",
+    "sha256": "06fc793f7d60af2c70be82e9c7bbae7732bde22246044f5384efd9eaccfd946c"
+  }
+]
