@@ -1,4 +1,4 @@
-const catalog=await fetch('catalog.json?v=3').then(response=>response.json());
+const catalog=await fetch('catalog.json?v=3.1').then(response=>response.json());
 const dialog=document.querySelector('#demo'),player=document.querySelector('#demo-video');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const copy=document.querySelector('#copy'),pause=document.querySelector('#pause');
@@ -28,11 +28,13 @@ for(const item of catalog){
   const subtitle=document.createElement('p');subtitle.dir='auto';subtitle.textContent=item.subtitle||'';
   button.append(v);button.onclick=()=>openClip(item);card.append(button,heading);
   if(item.subtitle)card.append(subtitle);
-  if(item.kind==='original'){
-    const source=document.createElement('a');
-    source.href='https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/'+item.id;
-    source.textContent='View code';card.append(source);
+  const links=document.createElement('div');
+  for(const [label,url] of [['View code',item.sourceUrl],['Settings',item.settingsUrl]]){
+    if(!url)continue;
+    const link=document.createElement('a');
+    link.href=url;link.textContent=label;links.append(link);
   }
+  if(links.childElementCount){links.className='scene-links';card.append(links);}
   document.querySelector({creator:'#creator-card',animation:'#grid',original:'#original-grid'}[item.kind]).append(card);observer.observe(v);
 }
 document.querySelector('#close').onclick=()=>dialog.close();

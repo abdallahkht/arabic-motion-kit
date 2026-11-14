@@ -8,4 +8,16 @@ const scenes=[
 ].map(([id,name,subtitle,prompt])=>({id,name,subtitle,prompt,kind:'animation'}));
 scenes.push({id:'cloudflare-edit',name:'Cloudflare Security Audit',subtitle:'قصّ الخلفية حول الرأس',kind:'creator',description:'The opening shot uses a cutout to place the graphic behind the presenter’s head.'});
 scenes.push(...JSON.parse(fs.readFileSync('examples/originals/catalog.json','utf8')));
+const kit='https://github.com/abdallahkht/arabic-motion-kit';
+const template='https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks';
+for(const scene of scenes){
+  if(scene.kind==='creator')continue;
+  if(scene.kind==='original'){
+    scene.sourceUrl=kit+'/tree/main/examples/originals/blocks/'+scene.id;
+  }else{
+    const builtIn=scene.id==='cutaway';
+    scene.sourceUrl=builtIn?kit+'/tree/main/src/cutaway':template+'/'+scene.id;
+    scene.settingsUrl=kit+'/blob/main/'+(builtIn?'catalog/cutaway/example.json':'examples/featured/'+scene.id+'.json');
+  }
+}
 fs.writeFileSync('gallery/catalog.json',JSON.stringify(scenes,null,2)+'\n');

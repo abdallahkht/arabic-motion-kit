@@ -4,35 +4,45 @@
     "name": "Cutaway",
     "subtitle": "ماذا وراء الريل؟",
     "prompt": "Use the built-in cutaway scene. Change the five Arabic labels to match my topic.",
-    "kind": "animation"
+    "kind": "animation",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/src/cutaway",
+    "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/catalog/cutaway/example.json"
   },
   {
     "id": "campaign-map",
     "name": "Campaign Map",
     "subtitle": "رحلة حول العالم",
     "prompt": "Render the featured campaign-map preset with my template pack. Adapt the stops and labels to my route.",
-    "kind": "animation"
+    "kind": "animation",
+    "sourceUrl": "https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/campaign-map",
+    "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/campaign-map.json"
   },
   {
     "id": "scale-reveal",
     "name": "Scale Reveal",
     "subtitle": "مليون ورقة فوق بعض",
     "prompt": "Render the featured scale-reveal preset with my template pack. Check the units before changing the stack height.",
-    "kind": "animation"
+    "kind": "animation",
+    "sourceUrl": "https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/scale-reveal",
+    "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/scale-reveal.json"
   },
   {
     "id": "iceberg",
     "name": "Iceberg",
     "subtitle": "خلف كواليس الريل",
     "prompt": "Render the featured iceberg preset with my template pack. Use my visible result at the tip and four hidden steps below.",
-    "kind": "animation"
+    "kind": "animation",
+    "sourceUrl": "https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/iceberg",
+    "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/iceberg.json"
   },
   {
     "id": "ranking-bars",
     "name": "Ranking Bars",
     "subtitle": "سباق المشاهدات",
     "prompt": "Render the featured ranking-bars preset with my template pack. Use my categories and values.",
-    "kind": "animation"
+    "kind": "animation",
+    "sourceUrl": "https://github.com/ctskool/chase-animations/tree/95d8925f41884bfce339f546cec109f3c731d209/blocks/ranking-bars",
+    "settingsUrl": "https://github.com/abdallahkht/arabic-motion-kit/blob/main/examples/featured/ranking-bars.json"
   },
   {
     "id": "cloudflare-edit",
@@ -46,41 +56,47 @@
     "name": "Isometric flow",
     "kind": "original",
     "description": "A miniature 3D process: an immediate opening, a van that triggers each step, and a delivery arrival with a building punch and a pulse back along the road.",
-    "sha256": "b1e6de6617532a197089cfe38d14d8dd6f4512a2f3f4e38ef9811bfd39f5037a"
+    "sha256": "b1e6de6617532a197089cfe38d14d8dd6f4512a2f3f4e38ef9811bfd39f5037a",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/isometric-flow"
   },
   {
     "id": "blue-editorial",
     "name": "Blue editorial",
     "kind": "original",
     "description": "An ultramarine editorial cover with frame-filling italic words, a kicker snap, a slanted reveal and four strips striking into an oversized final word.",
-    "sha256": "17eac99450a57e13c6bbacc89ae00781e144749e969027e66554d4c3f717a4ab"
+    "sha256": "17eac99450a57e13c6bbacc89ae00781e144749e969027e66554d4c3f717a4ab",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/blue-editorial"
   },
   {
     "id": "ink-wash",
     "name": "Ink Wash",
     "kind": "original",
     "description": "Large upright lettering and a mottled red sun open on rice paper. Mountain washes bend beneath clear title silhouettes. A rower crosses into open water, draws a trailing wake and completes an oar stroke as the pine finishes. A small, eroded red seal stamps last.",
-    "sha256": "7230ffd98f2c74a6c377dc5b24fa2cbce20c1515b45fdf6cc157a7616450e801"
+    "sha256": "7230ffd98f2c74a6c377dc5b24fa2cbce20c1515b45fdf6cc157a7616450e801",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/ink-wash"
   },
   {
     "id": "hours-collapse",
     "name": "Hours collapse",
     "kind": "original",
     "description": "Equal calendar hours land from the bottom up. The mascot gulps, crouches and stomps each labelled hour into a sliver as a clock rewinds. The final time slams above a bright terracotta block.",
-    "sha256": "38bb73ae71ae7e80481d2eadbf5d073110ec95ba35fd5c6a4f8bbda7206d8e59"
+    "sha256": "38bb73ae71ae7e80481d2eadbf5d073110ec95ba35fd5c6a4f8bbda7206d8e59",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/hours-collapse"
   },
   {
     "id": "agent-fan-out",
     "name": "Agent fan-out",
     "kind": "original",
     "description": "A prompt opens inside a branching burst. Colourful agents work and finish separately, then attached branches pull them into one pile. The last tick, full count and green result slab land together.",
-    "sha256": "70ed9638de59a5db27f8e1f9dcc1bfd71feede25f815fca25d04a078abe3614d"
+    "sha256": "70ed9638de59a5db27f8e1f9dcc1bfd71feede25f815fca25d04a078abe3614d",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/agent-fan-out"
   },
   {
     "id": "app-launch",
     "name": "App launch",
     "kind": "original",
     "description": "A broad studio phone receives a transaction. Its camera pill and percentage chip become readable cards, then clear for a much larger transfer payoff with an exact amount and solid accent-colour finish.",
-    "sha256": "06fc793f7d60af2c70be82e9c7bbae7732bde22246044f5384efd9eaccfd946c"
+    "sha256": "06fc793f7d60af2c70be82e9c7bbae7732bde22246044f5384efd9eaccfd946c",
+    "sourceUrl": "https://github.com/abdallahkht/arabic-motion-kit/tree/main/examples/originals/blocks/app-launch"
   }
 ]

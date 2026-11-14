@@ -1,6 +1,6 @@
 {
   "name": "arabic-motion-kit",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "description": "Arabic motion graphics, explainers and video effects for Claude Code and Codex",
   "type": "module",

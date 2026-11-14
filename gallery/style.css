@@ -11,3 +11,5 @@
 @media(max-width:620px){#examples .grid{grid-template-columns:repeat(2,minmax(0,1fr))}header{padding:16px}header nav{gap:12px}#examples h1{font-size:2.8rem}}
 
 #originals{padding:0 clamp(1rem,4vw,46px) 3rem}#original-grid{grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr))}#original-grid .card a{color:#9bcefa;text-decoration:underline}@media(max-width:620px){#original-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.scene-links{display:flex;gap:1rem;flex-wrap:wrap}.scene-links a{color:#9bcefa;text-decoration:underline}
